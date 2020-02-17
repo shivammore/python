@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "gcd.py",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPwftPPepj2aatQtyVFe/Oy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shivammore/python/blob/master/gcd.py.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6Q14k2XKlHmD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 136
+        },
+        "outputId": "692cb4fd-31a5-4b49-90ea-e5de5caf18cd"
+      },
+      "source": [
+        "def gcd(n1,n2) :\n",
+        "  gcd=1\n",
+        "  k=2\n",
+        "  while k<=n1 and k<=n2 :\n",
+        "    if n1%k==0 and n2%k==0 :\n",
+        "      gcd = k\n",
+        "    k=k+1\n",
+        "  return gcd\n",
+        "\n",
+        "def area(height=2,width=2) :\n",
+        "  return height*width\n",
+        "\n",
+        "\n",
+        "def main() :\n",
+        "  n1,n2=eval(input(\"Enter Two number:\"))\n",
+        "  print(\"The gcd of\",n1,\"&\",n2,\"is=\",gcd(n1,n2))\n",
+        "  print(\"Area:\",area())\n",
+        "  print(\"Area:\",area(5,10))\n",
+        "  print(\"Area:\",area(50))\n",
+        "  print(\"Area:\",area(width=50))\n",
+        "  print(\"Area\",area(height=20))   \n",
+        "\n",
+        "main()     "
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Two number:45,75\n",
+            "The gcd of 45 & 75 is= 15\n",
+            "Area: 4\n",
+            "Area: 50\n",
+            "Area: 100\n",
+            "Area: 100\n",
+            "Area 40\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
